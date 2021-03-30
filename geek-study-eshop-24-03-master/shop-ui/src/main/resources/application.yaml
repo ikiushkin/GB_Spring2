@@ -1,0 +1,33 @@
+server:
+  servlet:
+    context-path:
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring_eshop_db?createDatabaseIfNotExist=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: geek
+    password: geek
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        ddl-auto: validate
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+
+#  server.servlet.context-path=/
+#
+#  spring.datasource.url=jdbc:mysql://localhost:3306/spring_eshop_db?createDatabaseIfNotExist=true&characterEncoding=UTF-8&serverTimezone=UTC
+#  spring.datasource.username=geek
+#  spring.datasource.password=geek
+#  spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+#
+#  spring.jpa.show-sql=true
+#  spring.jpa.properties.hibernate.format_sql=true
+#  spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+#  spring.jpa.hibernate.ddl-auto=validate
+#
+#  spring.mvc.hiddenmethod.filter.enabled=true
